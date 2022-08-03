@@ -34,12 +34,12 @@ public class DashboardStepDefs
         System.out.println("actualBorrowedBookNumbers = " + actualBorrowedBookNumbers);
 
     }
-    @Then("the informations should be same with database")
-    public void the_informations_should_be_same_with_database() {
+    @Then("the information should be same with database")
+    public void the_information_should_be_same_with_database() {
 
-        //1.Make a conn
+        // 1.Make a connection
         // DB_Util.createConnection();
-        // since we have Before After with custom hooks we dont need this step any more
+        // since we have Before After with custom hooks we don't need this step anymore
 
         //USERS
 
@@ -54,8 +54,6 @@ public class DashboardStepDefs
 
 
         //BOOKS
-
-
             //2.Run Query
                 DB_Util.runQuery("select count(*) from books");
             //3.Store data
@@ -74,7 +72,7 @@ public class DashboardStepDefs
 
         //5.Close the conn
         //DB_Util.destroy();
-        // since we have Before After with custom hooks we dont need this step any more
+        // since we have Before After with custom hooks we don't need this step anymore
 
 
     }
